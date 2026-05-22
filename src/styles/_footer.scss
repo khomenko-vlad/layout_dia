@@ -59,6 +59,12 @@
     border-bottom: 1px solid $white-color;
     background-color: $background-dark;
 
+    &:focus {
+      border-bottom: 2px solid rgba(20, 78, 212, 1);
+      outline: none;
+      color: $white-color;
+    }
+    
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus {
@@ -72,12 +78,6 @@
 
     @media (min-width: $desktop-wide) {
       max-width: 460px;
-    }
-
-    &:focus {
-      border-bottom: 2px solid rgba(20, 78, 212, 1);
-      outline: none;
-      color: $white-color;
     }
   }
 
