@@ -32,6 +32,15 @@
     }
   }
 
+  &__icon {
+    transition: $transition-def;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
   & nav {
     @media (max-width: $desktop) {
       display: none;
@@ -42,9 +51,9 @@
     display: inline-flex;
     flex-direction: column;
     color: inherit;
-
+    
     @include uppercase-label;
-
+    
     &::after {
       margin-top: 8px;
       display: block;
@@ -53,6 +62,13 @@
       border-radius: 4px;
       background-color: $blue-color;
       width: 67px;
+      transition: $transition-def;
+    }
+
+    &:hover::after {
+    transform: scale(1.02);
+    background-color: coral;
+    opacity: 0.8;
     }
   }
 

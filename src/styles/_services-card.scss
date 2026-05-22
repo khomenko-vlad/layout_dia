@@ -11,13 +11,13 @@
   transition: $transition-def;
 
   &:hover {
-    transform: scale(1.02);
-    box-shadow: $background-dark-shadow-big;
+    transform: scale(0.99);
+    box-shadow: inset 0 2px 12px #afafaf;
   }
 
   &--shifted:hover {
     @media (min-width: $tablet) {
-      transform: scale(1.02) translateY(-50%);
+      transform: scale(0.99) translateY(-50%);
     }
   }
 
